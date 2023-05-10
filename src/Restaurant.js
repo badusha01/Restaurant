@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -18,14 +17,16 @@ function Restaurant() {
   };
   console.log(restList);
   useEffect(() => {
-    getData();
-  }, []);
+    getData()
+  }, [])
+
+
   return (
     <div>
       <Row className="ms-5">
-        {restList.map((rest) => (
+        {restList.map(rest => (
           <Col id="c1" className="p-2" lg={4} md={6}>
-            <Link id="l1" to={'/viewRest/${rest.id}'}>
+            <Link id="l1" to={`/viewRest/${rest.id}`}>
               <Card style={{ width: "18rem" }}>
                 <Card.Img variant="top" src={rest.photograph} />
                 <Card.Body>
