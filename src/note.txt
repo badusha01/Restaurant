@@ -14,3 +14,26 @@ params
 ------
 
 -useParams - hook used to access params 
+
+REDUX
+-----
+Props Drilling - data will stuck in any intermediate component when the component have any issues
+               - props drilling occurs during coupling(many connections between parent and child)
+
+To avoid props drilling we need to reduce coupling and make all components independent
+
+so react introduced a state management technology - REDUX 
+
+libraries 
+  
+  redux 
+  react-redux
+  redux-thunk
+
+  axios
+  -----
+
+  used to call api in react 
+
+
+  useSelector - hook used to access data from store

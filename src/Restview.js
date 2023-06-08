@@ -4,45 +4,30 @@ import { useParams } from 'react-router-dom'
 import ListGroup from 'react-bootstrap/ListGroup';
 import Operatingtime from './Operatingtime';
 import Review from './Review';
+import { useSelector } from 'react-redux';
 
 
 
 
 function Restview() {
-  const [restList, setRest] = useState([]);
 
-  // api to access data
-
-  const getData = async () => {
-    const result = await fetch("/restaurants.json");
-    result.json().then((data) => setRest(data.restaurants));
-  };
-  console.log(restList);
-
-  
 
 
     // object create for useParams
     const params=useParams()
     console.log(params.id);
+    const {restList}=useSelector(state=>state.reducer1)
 
     // find single restaurant
       const singleRest=restList.find(i=>i.id==params.id)
       console.log(singleRest);
-
-    useEffect(() => {
-      getData();
-    }, []);
-  
-
 
   return (
     <div>
       {singleRest?
        ( <Row>
            <Col lg={6} md={6}>
-            <img className='w-75 container p-5' style={{height:'600px'},{width:'100px'}} 
-            src={singleRest.photograph}/>
+            <img className='w-75 container p-5' style={{height:'600px'},{width:'100px'}} src={singleRest.photograph}/>
 
            </Col>
            <Col lg={6} md={6}>
