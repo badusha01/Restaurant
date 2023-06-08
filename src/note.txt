@@ -1,0 +1,39 @@
+useEffect - hook used to call function at starting time of components
+
+Redirection In React
+--------------------
+
+react-router-dom - library used for redirection in react 
+
+BrowserRouter - root component selector (wrap the root component in BrowserRouter tag in App.js)
+Route - for path setting
+Routes - if we use more than one path 
+
+
+params
+------
+
+-useParams - hook used to access params 
+
+REDUX
+-----
+Props Drilling - data will stuck in any intermediate component when the component have any issues
+               - props drilling occurs during coupling(many connections between parent and child)
+
+To avoid props drilling we need to reduce coupling and make all components independent
+
+so react introduced a state management technology - REDUX 
+
+libraries 
+  
+  redux 
+  react-redux
+  redux-thunk
+
+  axios
+  -----
+
+  used to call api in react 
+
+
+  useSelector - hook used to access data from store
