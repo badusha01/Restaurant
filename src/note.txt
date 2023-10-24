@@ -1,3 +1,66 @@
+
+React
+-----
+
+react is a frontend library of js
+
+---------------------------------
+Angular          |      React
+---------------------------------
+
+-framework            - library
+
+-real DOM             - virtural DOM
+
+-building blocks      - building blocks
+  html,css,ts           html,css,js 
+
+  Advantages of React
+  ----------
+
+  -virtural DOM (faster and use less storage space)
+  -reusable components
+  -concept of jsx(javaScript Xml) 
+
+
+  installation command
+  --------------------
+
+  global installation -
+            npm i -g create-react-app projectName
+  
+  local installation -
+             npx create-react-app projectName 
+
+  running command - npm start 
+
+
+  Data Sharing In React
+  ---------------------
+
+  parent component - child component
+
+  In react data can only be shared from parent(App.js) to child. We can add another sub child to the child and transfer data to the sub child.
+
+  In react instead of using variables to store data , state is used.
+
+     Props - Technique used to share data from parent component to child component
+     -----
+
+  Hooks
+  -----
+  ReactJs is function based
+
+  Stateless
+
+  With the help of hooks stateless can change to states(useState)
+
+  useState is in react library
+
+
+  
+
+
 useEffect - hook used to call function at starting time of components
 
 Redirection In React
